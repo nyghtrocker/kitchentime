@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - kitchentime MVC Test Application</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/Home/Index">
+                        <img src="/Images/logo.gif" alt="KitchinTime" /></a>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse" aria-expanded="true" id="navbar-main">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">UPPLEVELSER <b class="caret"></b></a>
+                            <ul class="dropdown-menu" data-bind="foreach: Products">
+                                <li><a data-bind="attr: { href: ProductUrl, title: ProductName }, text: ProductName">xxx</a></li>
+
+                            </ul>
+                        </li>
+                        <li>@Html.ActionLink("Omoss", "Omoss", "Home")</li>
+                        <li>@Html.ActionLink("Kontakt", "Kontakt", "Home")</li>
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            @RenderBody()
+
+        </div>
+
+        <div class="push"></div>
+
+    </div>
+        <div class="footer">
+        <footer id="footer">
+            <div class="row">
+                <div class="col-lg-offset-8">
+
+                    <h1>KONTAKT</h1>
+                </div>
+                <div class="col-lg-10">
+
+                    <form class="form-horizontal">
+
+                        <div class="form-group">
+                            <label for="inputName" class="col-lg-3 control-label">Name</label>
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-3 control-label">E-mail</label>
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-3 control-label">E-mail</label>
+                            <div class="col-lg-7">
+                                <textarea class="form-control" id="inputMeddelande" placeholder="Meddelande"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-7 col-lg-offset-3">
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-2">
+                    <p>
+                        xperia
+                        <br />
+                        Tullhus 3, Skeppsbron
+                        <br />
+                        11130 Stockholm
+                        <br />
+                        <br />
+                        <br />
+
+                    </p>
+                    <p>
+                        Telefon 08-555 12 34
+                        <br />
+                        Ë-post info@xperia.se
+                    </p>
+
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/knockout-2.2.0.js"></script>
+    @Scripts.Render("~/bundles/knockout")
+    @Scripts.Render("~/bundles/products")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Products>
+    <Product Id="1">
+        <Name>Vindsurf och kitsurf</Name>
+        <Header>Surfa i Varberg</Header>
+        <Description>Apelviken och Läjet har den absolut bästa vindsurfingen i Sverige</Description>
+        <ImageUrl>/Images/surfer.jpg</ImageUrl>
+      <ActionUrl>/Upplevelser/Surfa</ActionUrl>
+    </Product>
+    <Product Id="2">
+        <Name>Skärmflyg</Name>
+        <Header>Skärmflyg är frihet</Header>
+        <Description>Flyg bland fåglarna och känn den absoluta friheten högt upp i luften</Description>
+        <ImageUrl>/Images/paraglider.jpg</ImageUrl>
+      <ActionUrl>/Upplevelser/Skärmflyg</ActionUrl>
+    </Product>
+    <Product Id="3">
+        <Name>Formel 1 i Anderstorp</Name>
+        <Header>Formel 1 i Anderstorp</Header>
+        <Description>0-200 på 5 sekunder och en toppfart på 330 km/h är hisnande</Description>
+        <ImageUrl>/Images/formel1.jpg</ImageUrl>
+      <ActionUrl>/Upplevelser/Formel1</ActionUrl>
+    </Product>
+    <Product Id="4">
+        <Name>Massage och SPA-behandlingar</Name>
+        <Header>Avslappning på menyn</Header>
+        <Description>Välj bland helande eller avslappnande behandlingar i harmonisk miljö</Description>
+        <ImageUrl>/Images/massage.jpg</ImageUrl>
+      <ActionUrl>/Upplevelser/Massage</ActionUrl>
+    </Product>
+</Products>
